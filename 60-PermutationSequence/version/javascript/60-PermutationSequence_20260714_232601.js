@@ -1,0 +1,2 @@
+// Last updated: 7/14/2026, 11:26:01 PM
+1const uniquePathsWithObstacles=t=>{const n=t.length,r=t[0].length,e=Array.from({length:n},()=>Array(r).fill(-1));return function n(r,l){return r<0||l<0||1===t[r][l]?0:0===r&&0===l?1:-1!==e[r][l]?e[r][l]:e[r][l]=n(r-1,l)+n(r,l-1)}(n-1,r-1)};
